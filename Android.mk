@@ -15,6 +15,9 @@ LOCAL_PRIVILEGED_MODULE := true
 
 include frameworks/opt/setupwizard/library/common.mk
 
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
+
 include $(BUILD_PACKAGE)
 
 # additionally, build tests in sub-folders in a separate .apk
